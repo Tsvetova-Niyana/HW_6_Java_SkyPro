@@ -157,7 +157,7 @@ public class Main {
         2*10=20
          */
 
-        System.out.println("\nЗадание 10");
+        System.out.println("\nЗадание 10 ");
 
         int num = 2;
         int result = 1;
