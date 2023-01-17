@@ -131,13 +131,14 @@ public class Main {
 
         System.out.println("\nЗадание 9");
 
-        int money = 29000;
-        int totalMoney = 0;
+        double percent = 0.01;
+        double totalMoney = 0;
+        int money = 29_000;
 
         for (int i = 1; i <= 12; i++) {
-            totalMoney = totalMoney + totalMoney / 100;
-            totalMoney = totalMoney + money;
-            System.out.println("Месяц " + i + " сумма накоплений равна " + totalMoney + " рублей");
+            totalMoney = totalMoney  + money + totalMoney * percent;
+
+            System.out.printf("Месяц %d сумма накоплений равна %.2f рублей%n", i, totalMoney);
         }
     }
 
